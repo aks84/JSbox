@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Box for practicing JavaScript</title>
+</head>
+<body>
+
+	<button onclick="convert()">Convert Currency</button>
+
+	<script>
+		function convert() {
+			var whichCurrency = prompt(" What do you have INR or USD?");
+
+		if (whichCurrency == "INR") {
+			let getInr = prompt("Enter ammount in INR: ");
+			let inUSD = getInr/70;
+			alert("USD: " + inUSD);
+		}else if (whichCurrency == "USD") {
+			let getUsd = prompt("Enter ammount in USD: ");
+			let inINR = getUsd*70;
+			alert("INR: " + inINR);
+		}
+
+			
+		}
+		
+
+
+	</script>
+	
+</body>
+</html>
