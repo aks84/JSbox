@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Menu</title>
+</head>
+<body onload="getMenu()">
+
+
+
+    <script>
+
+    function getMenu(){
+    let dateFormat = new Date()
+    let weekDay = dateFormat.getDay() +1;
+
+    switch(weekDay){
+        case 1:
+        window.open("dailymenu/sunday.html", "sundaySpecial", "width=500, height=300" )
+        break;
+        case 2:
+        window.open("dailymenu/monday.html", "mondaySpecial", "width=500, height=300" )
+        bread;
+        case 3:
+        window.open("dailymenu/tuesday.html", "tuesdaySpecial", "width=500, height=300" )
+        bread;
+        case 4:
+        window.open("dailymenu/wednesday.html", "wednesSpecial", "width=500,height=300" )
+        bread;
+        case 5:
+        window.open("dailymenu/thursday.html", "thursdaySpecial", "width=500, height=300" )
+        bread;
+        case 6:
+        window.open("dailymenu/friday.html", "fridaySpecial", "width=500, height=300" )
+        bread;
+        case 7:
+        window.open("dailymenu/saturday.html", "saturdaySpecial", "width=500, height=300" )
+        bread;
+    }
+
+  
+       
+    }
+
+   
+
+    </script>
+    
+</body>
+</html>
