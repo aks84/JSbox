@@ -8,28 +8,35 @@
 </head>
 <body>
 
-    <form id="dob" method="POST" onsubmit="nameAge()">
-        <h2>Know Your Age:</h2>
-        <label for="">Tell us your name:</label>
-        <input id="fName" type="text" placeholder="Full Name"><br>
-        <label for="">Choose your DOB:</label>
-        <input type="date" name="" id="yAge"><br>
-        <button type="submit">Submit</button>
+  <h2>Tell us your DOB: </h2>
 
+    <form name="ageCalc">
+        <input type="date" name="DOB" value="today">
+        <input type="button" value="Get Years" onclick="yeasOld()">
     </form>
 
     <script>
 
-        const nameAge = () => {
-           let fName = document.querySelector("#dob");
-           console.lgo(dob);
-        }
-       
+        var dobIn = parseInt(ageCalc.DOB.value);
+        
+        
+        
+        function yeasOld() {
+            const date = new Date();
+            let today = parseInt(date.getDate()+1);
+            let month = parseInt(date.getMonth()+1);
+            let year = date.getFullYear();
+            let currentDate = month+"/"+today+"/"+year;
+            let yourAge = year - dobIn;
+            document.write("You are "+yourAge+" years old.");
+            
 
-    
-    
-    
-    
+            
+
+            
+            
+        }
+
     </script>
     
 </body>
