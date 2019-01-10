@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="getEven()">Get all Even numbers</button>
+
+    <script>
+    
+        function getEven()
+        {
+            var firstInt = parseInt(prompt("Enter Your First Number: "));
+            var lastInt = parseInt(prompt("Enter Your Last Number: "));
+            while(firstInt<=lastInt)
+            {
+                if(firstInt%2==0)
+                {
+                    document.write(firstInt+ " ");
+                        firstInt = firstInt+2;
+                }
+                else
+                {
+                    firstInt = firstInt+1;
+
+                }
+                
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>
