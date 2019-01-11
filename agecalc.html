@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
     <form name="ageCalculator">
         <h2>Know Your Age:</h2>
         <label for="">Tell us your name:</label>
@@ -15,11 +16,18 @@
         <label for="">Choose your DOB:</label>
         <input type="date" name="dateOfBirth" ><br>
         <button name="btnSub" type="submit" onsubmit="calculate_age(data)">Submit</button>
+=======
+  <h2>Tell us your DOB: </h2>
+>>>>>>> 9fa9ed9c03ce23232d125011ea1d37b6be42c6f6
 
+    <form name="ageCalc">
+        <input type="date" name="DOB" value="today">
+        <input type="button" value="Get Years" onclick="yeasOld()">
     </form>
 
     <script>
 
+<<<<<<< HEAD
 
         function calculate_age (data) {
         var now = new Date();
@@ -35,6 +43,28 @@
     
     
     
+=======
+        var dobIn = parseInt(ageCalc.DOB.value);
+        
+        
+        
+        function yeasOld() {
+            const date = new Date();
+            let today = parseInt(date.getDate()+1);
+            let month = parseInt(date.getMonth()+1);
+            let year = date.getFullYear();
+            let currentDate = month+"/"+today+"/"+year;
+            let yourAge = year - dobIn;
+            document.write("You are "+yourAge+" years old.");
+            
+
+            
+
+            
+            
+        }
+
+>>>>>>> 9fa9ed9c03ce23232d125011ea1d37b6be42c6f6
     </script>
     
 </body>
