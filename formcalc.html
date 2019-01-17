@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- javascript form examples -->
+<form name="q">
+    <input type="text" name="rate" placeholder="Enter ROI"> <br>
+    <input type="text" name="time" placeholder="Enter Duration"><br>
+    <input type="text" name="ammount" placeholder="Enter ammount"><br>
+    <input type="text" name="ans" value=""><br>
+   <button type="button" onclick="calcNow()">Calculate</button>
+   
+
+    
+</form>
+
+
+<script>
+
+  
+
+    function calcNow(){
+        var rt = parseInt(document.q.rate.value);
+        var tm = parseInt(document.q.time.value);
+        var amt = parseInt(document.q.ammount.value);
+        var emi = (rt * tm * amt)/100;
+        document.q.ans.value = emi;
+
+        
+
+    }
+
+
+
+</script>
+    
+</body>
+</html>

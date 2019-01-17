@@ -8,6 +8,13 @@
 </head>
 <body>
 
+    <form name="ageCalculator">
+        <h2>Know Your Age:</h2>
+        <label for="">Tell us your name:</label>
+        <input id="fName" type="text" name="fullName" placeholder="Full Name"><br>
+        <label for="">Choose your DOB:</label>
+        <input type="date" name="dateOfBirth" ><br>
+        <button name="btnSub" type="submit" onsubmit="calculate_age(data)">Submit</button>
   <h2>Tell us your DOB: </h2>
 
     <form name="ageCalc">
@@ -17,6 +24,21 @@
 
     <script>
 
+
+        function calculate_age (data) {
+        var now = new Date();
+        var age = now - data;
+        age = Math.floor(age/1000/60/60/24/365);
+        console.log(age);
+        };
+
+        // console.log(calculate_age(new Date(1982, 11, 4)));
+        // console.log(calculate_age(new Date(1962, 1, 1)));
+        // console.log(calculate_age(new Date(1954, 2, 17)));
+            
+    
+    
+    
         var dobIn = parseInt(ageCalc.DOB.value);
         
         
